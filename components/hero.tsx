@@ -6,7 +6,7 @@ export function Hero() {
           Hi, I&apos;m <span className="text-primary">Udit</span>
         </h1>
         <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl">
-          A passionate full-stack developer specializing in building exceptional digital experiences.
+          A passionate full-stack developer specializing in building exceptional digital experiences. Amazon SDE working on the Kinesis Firehose team.
         </p>
       </div>
     </section>
