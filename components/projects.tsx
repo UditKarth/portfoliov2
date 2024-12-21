@@ -1,11 +1,18 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useRef } from "react"
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-function AnimatedCard({ project, index }: { project: any; index: number }) {
+interface Project {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+}
+
+function AnimatedCard({ project, index }: { project: Project; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
 
   const x = useMotionValue(0)
